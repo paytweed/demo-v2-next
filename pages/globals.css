@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer base {
+  h1 {
+    font-size: 36px;
+    line-height: 120%;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 130%;
+    font-weight: 500;
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 130%;
+    font-weight: 600;
+  }
+  h4 {
+    font-size: 22px;
+    line-height: 130%;
+    font-weight: 500;
+  }
+}
+
+@layer components {
+  .body1 {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+  }
+  .body2 {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+  .body3 {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 500;
+  }
+  .body4 {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+  .body5 {
+    font-size: 12px;
+    line-height: 130%;
+    font-weight: 400;
+  }
+  .body6 {
+    font-size: 10px;
+    line-height: 120%;
+    font-weight: 400;
+  }
+}
