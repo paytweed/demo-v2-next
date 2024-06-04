@@ -5,8 +5,8 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer className='px-7 py-3 pt-8'>
-      <div className='gap-y-2 flex flex-col md:flex-row items-center justify-between'>
-        <div className='w-full container md:w-auto flex space-x-4 justify-between'>
+      <div className='gap-y-2 flex flex-col md:flex-row items-center justify-between body5'>
+        <div className='w-full container md:w-auto flex space-x-8 justify-between'>
           <Link
             href='https://docs.paytweed.com/'
             className='hover:underline'>
