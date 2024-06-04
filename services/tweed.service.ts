@@ -62,7 +62,7 @@ const tokenCheckoutVariants: Record<string, NftPurchaseBackendPayload> = {
     nftId: 'demo-paidmint-erc20',
     title: 'Blue Cat',
     tokenUri: 'https://s6.imgcdn.dev/3i17B.png', // Bluey
-    priceInCrypto: String(1e18), // One fake USDC token
+    priceInCrypto: String(100e18), // 100 fake USDC token
     tokenContractAddress: FAKE_USDC_CONTRACT_ADDRESS,
     abi: DEMO_NFT_CONTRACT_ABI_PAID_ERC20,
   },
