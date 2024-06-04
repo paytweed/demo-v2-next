@@ -48,11 +48,9 @@ const NFTCard = ({
         height={160}
         className='rounded-lg mr-6 w-[80px] mini:w-[140px] md:w-[160px]'
       />
-      <div
-      // className="py-10"
-      >
-        <p className='body2 mb-1'>{headText}</p>
-        <p className='body5 mb-4'>{description}</p>
+      <div>
+        <p className='body1 mb-1'>{headText}</p>
+        <p className='body5 sm:body4 mb-4'>{description}</p>
         <Button
           isLoading={isLoading || isMintFlowInProgress}
           extraAttributes={{ onClick: handleClickBuy }}>
