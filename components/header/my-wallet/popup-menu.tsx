@@ -13,10 +13,10 @@ const PopupMenu: FC<Props> = ({ walletAddress }) => {
   const router = useRouter()
 
   return (
-    <div className='absolute top-full mt-2 right-0 p-4 cursor-auto flex flex-col space-y-5 bg-white border border-lightgrey rounded-12'>
-      <div className='flex flex-col space-y-2'>
-        <div className='uppercase text-grey body6'>Wallet Address</div>
-        <div className='body4'>{formatAddress(walletAddress)}</div>
+    <div className='absolute top-full mt-2 right-0 p-4 cursor-auto flex flex-col space-y-6 bg-white border border-lightgrey rounded-12'>
+      <div className='flex flex-col space-y-2 mr-6'>
+        <span className='uppercase text-grey body6'>Wallet Address</span>
+        <span className='body4'>{formatAddress(walletAddress)}</span>
       </div>
       <div className='flex flex-col'>
         <div
@@ -29,9 +29,9 @@ const PopupMenu: FC<Props> = ({ walletAddress }) => {
             width={28}
             height={28}
           />
-          <span>My assets</span>
+          <span className='body4'>My assets</span>
         </div>
-        <hr className='my-2 border-d-1 border-lightgrey' />
+        <hr className='my-3 border-d-1 border-lightgrey' />
         <div
           className='cursor-pointer flex flex-row items-center space-x-2'
           onClick={() => router.push('/logout')}>
@@ -42,7 +42,7 @@ const PopupMenu: FC<Props> = ({ walletAddress }) => {
             width={28}
             height={28}
           />
-          <span>Log out</span>
+          <span className='body4'>Log out</span>
         </div>
       </div>
     </div>
