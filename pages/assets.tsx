@@ -3,11 +3,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Chip from '@/components/chip'
 import LayoutPrimary from '@/components/layouts/primary'
-import copySVG from '@/components/svgs/copy.svg'
 import arrowLeftSVG from '@/components/svgs/arrow-left.svg'
 import imageViewsSVG from '@/components/svgs/image-views.svg'
 import { useTweedContext } from '@/context/tweedContext'
 import { formatAddress } from '@/utils/web3utils'
+import CopyButton from '@/components/copy-button'
 
 const MOCK_DATA = {
   ownedNfts: Array.from({ length: 5 }).map((_, index) => ({
@@ -43,12 +43,7 @@ const AssetsPage: FC = () => {
         <button
           className='p-1 mb-6 rounded-8 border border-white hover:border-blue transition'
           onClick={handleCopyWalletAddress}>
-          <Image
-            src={copySVG}
-            alt='Copy icon'
-            width={20}
-            height={20}
-          />
+          <CopyButton size={20} />
         </button>
 
         {/* ~=~=~ ASSETS ~=~=~ */}

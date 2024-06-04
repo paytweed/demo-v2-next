@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import CopySVG from '@/components/svgs/copy.svg'
+import CopyButton from './copy-button'
 
 const TEST_CARD_INFO = {
   cardNumber: '4242 4242 4242 4242',
@@ -14,12 +13,7 @@ const CopiableText = ({ text }: { text: string }) => (
     }}
     className='flex flex-row items-center px-2 py-1 gap-2 border rounded-8 hover:border-blue focus:border-darkblue transition cursor-pointer'>
     <p className='body5'>{text}</p>
-    <Image
-      src={CopySVG}
-      alt='Copy icon'
-      width={16}
-      height={16}
-    />
+    <CopyButton size={16} />
   </div>
 )
 
