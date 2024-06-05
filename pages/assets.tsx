@@ -33,11 +33,9 @@ const AssetsPage: FC = () => {
     navigator.clipboard.writeText(walletAddress)
   }
 
-  const nftsAmount = walletNfts?.ownedNfts?.length || 0
-
   return (
     <LayoutPrimary>
-      <div className='w-full flex flex-col items-center pt-4 space-y-3'>
+      <div className='w-full flex flex-col items-center justify-center pt-4 space-y-3'>
         <Chip text='Wallet Address' />
         <h2>{walletAddress ? formatAddress(walletAddress) : 'Connecting to Paytweed...'}</h2>
         <button
@@ -66,8 +64,7 @@ const AssetsPage: FC = () => {
             </p>
           </div>
         ) : (
-          <div
-            className={`gap-y-5 gap-x-2 sm:gap-x-5 grid grid-cols-${Math.min(nftsAmount, 2)} md:grid-cols-${Math.min(nftsAmount, 4)} lg:grid-cols-${Math.min(nftsAmount, 6)}`}>
+          <div className={`gap-y-5 gap-x-2 sm:gap-x-5 justify-center flex flex-wrap`}>
             {walletNfts.ownedNfts.map((nft, index) => (
               <div
                 key={index}
