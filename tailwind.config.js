@@ -3,6 +3,16 @@ module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
+      animation: {
+        breathe: 'breathe 2s ease-in-out infinite', // 4 seconds for holding + 1 second for transition
+      },
+      keyframes: {
+        breathe: {
+          '0%, 35%': { transform: 'scale(1.5)' },  // Hold scale(1.2) for 2 seconds
+          '50%, 85%': { transform: 'scale(1)' },   // Hold scale(1) for 2 seconds
+          '100%': { transform: 'scale(1.5)' },     // Ensure smooth transition
+        },
+      },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },

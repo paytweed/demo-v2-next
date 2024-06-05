@@ -8,6 +8,7 @@ import imageViewsSVG from '@/components/svgs/image-views.svg'
 import { useTweedContext } from '@/context/tweedContext'
 import { formatAddress } from '@/utils/web3utils'
 import CopyButton from '@/components/copy-button'
+import Loader from '@/components/loading'
 
 const MOCK_DATA = {
   ownedNfts: Array.from({ length: 5 }).map((_, index) => ({
@@ -32,6 +33,15 @@ const AssetsPage: FC = () => {
     if (!walletAddress) return
     navigator.clipboard.writeText(walletAddress)
   }
+
+  const isLoadingState = sdkLoading || !walletAddress || !walletNfts
+  if (isLoadingState)
+    return (
+      // fullscreen loader
+      <div className='min-h-screen grid place-items-center'>
+        <Loader />
+      </div>
+    )
 
   return (
     <LayoutPrimary>
