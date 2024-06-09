@@ -20,7 +20,7 @@ const CopiableText = ({ text }: { text: string }) => (
 const FloatingTestCardInfo = () => {
   return (
     <div
-      className='fixed top-[80px] inset-x-0 flex items-center justify-center'
+      className='fixed top-[2vh] sm:top-[10vh] inset-x-0 flex items-center justify-center'
       style={{ zIndex: 22222 }} // Tweed widget is zindex=10k
     >
       <div className='bg-white p-2 rounded-16 border-2'>
