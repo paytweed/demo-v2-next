@@ -15,7 +15,7 @@ export default function Footer() {
           </Link>
           <Link
             target="_blank"
-            href='#'
+            href='https://paytweed.com/end-user-license-agreement'
             className='hover:underline'>
             Terms of Service
           </Link>

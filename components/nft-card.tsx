@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Button from './button'
 import { useState } from 'react'
 import { NFTId, useTweedContext } from '@/context/tweedContext'
+import Link from 'next/link'
 
 const NFTCard = ({
   nftId,
@@ -58,11 +59,12 @@ const NFTCard = ({
         </Button>
         <p className='body6 text-grey mt-2'>
           By continuing, you agree to{' '}
-          <a
-            href='#'
+          <Link
+            target='_blank'
+            href='https://paytweed.com/end-user-license-agreement'
             className='underline'>
             Terms of Service
-          </a>
+          </Link>
         </p>
       </div>
     </div>
