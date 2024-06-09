@@ -8,16 +8,19 @@ export default function Footer() {
       <div className='gap-y-2 flex flex-col md:flex-row items-center justify-between body5'>
         <div className='w-full container md:w-auto flex space-x-8 justify-between'>
           <Link
+            target="_blank"
             href='https://docs.paytweed.com/'
             className='hover:underline'>
             Docs
           </Link>
           <Link
+            target="_blank"
             href='#'
             className='hover:underline'>
             Terms of Service
           </Link>
           <Link
+            target="_blank"
             href='https://dashboard.paytweed.com/'
             className='hover:underline items-center flex gap-x-1'>
             Developer Console
