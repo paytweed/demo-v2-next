@@ -713,25 +713,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@paytweed/core-js@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@paytweed/core-js@npm:1.2.0"
+"@paytweed/core-js@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@paytweed/core-js@npm:1.2.1"
   dependencies:
     axios: "npm:1.5.1"
     crypto-js: "npm:4.2.0"
     ethers: "npm:6.8.0"
     events: "npm:3.3.0"
-  checksum: 10c0/8808af07171112343ef25199488db0fdb298595697d1f720e3662ceb68895227377d6b4ec3fa24c084be3921901f867196bc0826dc0390e132f5f5fde245e530
+  checksum: 10c0/3c1daae08c5b757e8ec51b6b818278af9be78330bcbda19f71c836ddc164aa1ba615307c3da1defaa37e7434f24416f1a63708ce30a98b21c990d7f028ecf2c4
   languageName: node
   linkType: hard
 
-"@paytweed/core-react@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@paytweed/core-react@npm:1.2.0"
+"@paytweed/core-react@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@paytweed/core-react@npm:1.2.1"
   dependencies:
-    "@paytweed/core-js": "npm:^1.2.0"
+    "@paytweed/core-js": "npm:^1.2.1"
     react: "npm:18.2.0"
-  checksum: 10c0/ed7c92e115c2d84826e370daa33696f8da92ced2f6a235ea3b1aa73220ddb474af88b7aae812ff70fcf70f91c0e0240339a74849f1afce2c507fc541e2805b84
+  checksum: 10c0/9edd6dfa959a1f63a8c81634dd2a6a24b4d510038563940210e3d4334425b01e9f66b5e70a1a3d21d3d140e8928c9ac64c1a6f7431f3ac3104bf7f456c6da17c
   languageName: node
   linkType: hard
 
@@ -4049,7 +4049,7 @@ __metadata:
   dependencies:
     "@next/env": "npm:^14.2.3"
     "@paytweed/backend-sdk": "npm:^2.0.16"
-    "@paytweed/core-react": "npm:^1.2.0"
+    "@paytweed/core-react": "npm:^1.2.1"
     "@paytweed/frontend-sdk-react": "npm:^2.0.13"
     "@types/node": "npm:^20.13.0"
     "@types/react": "npm:~18.2"
