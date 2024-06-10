@@ -8,8 +8,11 @@ This demo includes an example implementation for a connection to both SDKv1 and 
 Using the SDKv1 for the Checkout processes (both free-mint and paid-mint).  
 And using the SDKv2 for the wallet creation, and management.
 
-As a prerequisite for the project Tweed's dev team has deployed a dedicated demo NFT contract to the `Polygon Amoy` chain,  
-To be used specifically in this project, The contract's address is:
+The user first creates a Tweed wallet via the SDKv1,  
+After that he sends the wallet address as the destination parameter to the SDKv2 checkout process.
+
+As a prerequisite for the project, Tweed's dev team has deployed a dedicated demo NFT contract to the `Polygon Amoy` chain,  
+To be used specifically in this project, The contract's address can be seen in the call to Tweed's function.
 
 ## Setup locally
 

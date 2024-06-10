@@ -44,16 +44,16 @@ const tokenCheckoutVariants: Record<string, NftPurchaseBackendPayload> = {
     nftId: 'demo-freemint',
     title: 'Pink Cat',
     tokenUri: 'https://s6.imgcdn.dev/3iaCq.png', // Pinky
-    priceInCrypto: '0',
-    tokenContractAddress: undefined, // No token address for freemint
+    priceInCrypto: '0', // For free mint
+    tokenContractAddress: undefined, // For free mint
     abi: DEMO_NFT_CONTRACT_ABI_FREE,
   },
   'demo-paidmint-native': {
     ...tokenCheckoutCommon,
     nftId: 'demo-paidmint-native',
     title: 'Blue Cat',
-    tokenUri: 'https://s6.imgcdn.dev/3i17B.png', // Bluey
-    priceInCrypto: String(1e16), // Native mint function requires 0.01 MATIC
+    tokenUri: 'https://s6.imgcdn.dev/3i17B.png',
+    priceInCrypto: String(1e16), // For native settlement -- set price to 0.01 MATIC
     description: "Non-fungible token for demonstration of Tweed's capabilities",
     abi: DEMO_NFT_CONTRACT_ABI_PAID_NATIVE,
   },
@@ -61,9 +61,9 @@ const tokenCheckoutVariants: Record<string, NftPurchaseBackendPayload> = {
     ...tokenCheckoutCommon,
     nftId: 'demo-paidmint-erc20',
     title: 'Blue Cat',
-    tokenUri: 'https://s6.imgcdn.dev/3i17B.png', // Bluey
-    priceInCrypto: String(100e18), // 100 fake USDC token
-    tokenContractAddress: FAKE_USDC_CONTRACT_ADDRESS,
+    tokenUri: 'https://s6.imgcdn.dev/3i17B.png',
+    priceInCrypto: String(100e18), // For ERC20 settlement -- 100 fake USDC token
+    tokenContractAddress: FAKE_USDC_CONTRACT_ADDRESS, // For ERC20 settlement -- fake USDC token address
     abi: DEMO_NFT_CONTRACT_ABI_PAID_ERC20,
   },
 }
