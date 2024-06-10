@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@paytweed/backend-sdk": "^2.0.16",
-    "@paytweed/core-react": "^1.2.1",
+    "@paytweed/core-react": "^1.2.0",
     "@paytweed/frontend-sdk-react": "^2.0.13",
     "alchemy-sdk": "^3.3.1",
     "ethers": "^6.12.2",
