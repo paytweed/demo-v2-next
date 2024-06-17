@@ -11,10 +11,17 @@ And using the SDKv2 for the wallet creation, and management.
 The user first creates a Tweed wallet via the SDKv1,  
 After that he sends the wallet address as the destination parameter to the SDKv2 checkout process.
 
-As a prerequisite for the project, Tweed's dev team has deployed a dedicated demo NFT contract to the `Polygon Amoy` chain,  
-To be used specifically in this project, The contract's address can be seen in the call to Tweed's function.
-
 ## Setup locally
+
+### Prerequisites
+
+There are few prerequisite for the project:
+
+- Alchemy API Key - The implementation requires a valid Alchemy key in order to call the `GetOwnedNfts` function and list the account's NFTs
+
+- On the `Polygon Amoy` chain there are no official USDC contract, so Tweed's dev team has deployed a dedicated demo NFT contract to the chain,  
+    To be used specifically for the purpose of transferring a token with the name "USDC", in analogy to mainnet.  
+    The contract's address can be seen in the call to Tweed's function.
 
 ### Install
 
@@ -38,8 +45,12 @@ Run the project using:
 
 `yarn dev`
 
+Once you open the browser on the running app's port you will have a basic login prompt, enter with:  
+Username: `tweed`
+Password: {env.BASIC_AUTH_PASSWORD}
+
 **Note:**  
-When first running the application or when changing the userId/userEmail the application will recreate an SDKv1 wallet.
+When first running the application or when changing the userId/userEmail the application will recreate an SDKv1 wallet automatically when loading the page.
 
 ## More about Tweed
 

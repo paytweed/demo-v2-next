@@ -1,5 +1,7 @@
 // https://nextjs.org/docs/app/building-your-application/optimizing/instrumentation
 
+// This file runs when the app starts up and can be used to validate environment variables or run other startup tasks.
+
 const validateRequiredEnvVarsDefined = () => {
   if (!process.env.NEXT_PUBLIC_APPLICATION_ID) {
     throw new Error('NEXT_PUBLIC_APPLICATION_ID is not defined')

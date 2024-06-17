@@ -2,6 +2,10 @@
 
 import { MiddlewareConfig, NextRequest, NextResponse } from 'next/server'
 
+// Checks the Authorization header for a Basic Auth token
+// and validates it against the expected user and password.
+// In case not found or invalid, it redirects to a route that sends a header 'Basic realm="Secure Area"' and a 401 status code.
+
 export const config: MiddlewareConfig = {
   matcher: ['/', '/(.*)', '/api/tweed/(.*)'],
 }
