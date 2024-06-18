@@ -17,7 +17,7 @@ const MOCK_DATA = {
       symbol: 'MNFT',
       address: '0x1234567890abcdef1234567890abcdef12345678',
     },
-    tokenUri: 'https://s6.imgcdn.dev/3i17B.png',
+    tokenUri: 'https://s6.imgcdn.dev/3BIYT.png',
   })),
 }
 
