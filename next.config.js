@@ -6,11 +6,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'tweed-demo.web.app',
-      },
-      {
-        protocol: 'https',
-        hostname: 's6.imgcdn.dev',
+        hostname: '*',
       },
     ],
   },
