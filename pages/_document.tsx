@@ -11,7 +11,7 @@ export default function Document() {
         />
         <link
           rel='apple-touch-icon'
-          href='/tweed-logo-dark.ico'
+          href='/tweed-logo-dark.ico?v=1'
           type='image/x-icon'
           sizes='any'
         />

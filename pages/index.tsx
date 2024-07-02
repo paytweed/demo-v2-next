@@ -11,20 +11,6 @@ export default function Index() {
 
   return (
     <>
-      <Head>
-        <title>Tweed Demo</title>
-        <link
-          rel='icon'
-          href='/tweed-logo-dark.ico'
-          sizes='any'
-        />
-        <link
-          rel='apple-touch-icon'
-          href='/tweed-logo-dark.ico'
-          type='image/x-icon'
-          sizes='any'
-        />
-      </Head>
       <LayoutPrimary>
         {isStripeDemoCardPopupShown && <FloatingTestCardInfo />}
         <div className='flex flex-col xl:flex-row items-center justify-center mt-2'>
