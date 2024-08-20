@@ -34,7 +34,6 @@ After cloning the repository, Install dependencies with:
 Copy the `.env.example` to `.env.local` and redefine the variables accordingly:
 
 - `NEXT_PUBLIC_APPLICATION_ID`: The ApplicationID of the SDKv2 (can be obtained in [Tweed's Dashboard](https://dashboard.paytweed.com/)).
-- `BASIC_AUTH_PASSWORD`: Any secure password for securing your demo app.
 - `TWEED_API_KEY`: The demo API KEY of the SDKv1 (can be obtained in [Tweed's v1 Console](https://console.paytweed.com/))
 - `TWEED_API_SECRET`: The demo API SECRET of the SDKv1 (can be obtained in [Tweed's v1 Console](https://console.paytweed.com/))
 - `ALCHEMY_API_KEY`: An API KEY for alchemy (see [Alchemy docs](https://docs.alchemy.com/docs/alchemy-quickstart-guide))
@@ -44,10 +43,6 @@ Copy the `.env.example` to `.env.local` and redefine the variables accordingly:
 Run the project using:
 
 `yarn dev`
-
-Once you open the browser on the running app's port you will have a basic login prompt, enter with:  
-Username: `tweed`
-Password: {env.BASIC_AUTH_PASSWORD}
 
 **Note:**  
 When first running the application or when changing the userId/userEmail the application will recreate an SDKv1 wallet automatically when loading the page.
