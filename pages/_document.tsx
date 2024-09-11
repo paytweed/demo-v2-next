@@ -20,6 +20,8 @@ export default function Document() {
           href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'
           rel='stylesheet'
         />
+      <meta name="dscvr:canvas:version" content="vNext">
+      <meta name="og:image" content="https://my-canvas.com/preview-image.png">
       </Head>
       <body>
         <Main />
